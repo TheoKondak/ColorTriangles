@@ -1,0 +1,21 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   colouredTriangles006.js
+#	new file:   colouredTriangles007.js
+#
+# Changes not staged for commit:
+#	modified:   colouredTriangles004-StartingFromScratch.js
+#
+# Untracked files:
+#	colouredTriangles005-code-works-but-wrong-algorythm.js
+#	colouredtriangles001.js
+#	colouredtriangles002.js
+#	colouredtriangles003 - creates a correct string.js
+#	deleteMe.js
+#
+

@@ -1,34 +1,26 @@
    
-let row = "RGBG";
+let row = "RBRG";
 
 
 triangle(row);
 
 function triangle(row){
-let prevRow = "";
+let prevLetter = "";
  let rowLength = row.length; // so we can calculate how many times we must execute the algorithm
  let triangle = []
    
-    
+if (rowLength == 1) return row;
+else {
   //Calculate how many times we have to execute the algorithm
    for (let i=0; i<rowLength; i++){
 
-    if (i == 0){
-    
-    triangle[i] = row.slice(-2);
-    prevRow= triangle[i]
-    console.log("first");
-    }
-    else {
-    prevRow = triangle[i-1];
-    triangle[i] = calculateLastColor(prevRow);
-console.log("other");
-}
-
+prevLetter = row.slice(i, i+2);
+    console.log(prevLetter);
 
 }
 
-   console.log(triangle);
+}
+   //console.log(triangle);
   
 
   
