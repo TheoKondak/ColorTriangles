@@ -12,31 +12,32 @@ function triangle(row) {
 
 
   if (rowLength === 1) {
-    result= row.slice(0);   
- console.log( " IF " , result);
+    result = row.slice(0);
+    console.log(" IF ", result);
   }
   else {
     //Calculate how many times we have to execute the algorithm
-    
+
     for (let i = 0; i < rowLength - 1; i++) {
 
-      prevLetter = row.slice(i, i + 2);
+      prevLetter = row.slice(i, i + 2); // Slice Start at i | end slice at possition i+2
       result = result + calculateLastColor(prevLetter);
-      result = result.slice(-1);
-    console.log("ELSE:", i);
-    console.log("result:" , result);
-    console.log("RowLength:", rowLength);
+      result = result.slice(-1); //Slice only the last character of result
+      console.log("ELSE:", i);
+      console.log("PrevLetter:", prevLetter);
+      console.log("Result:", result);
+      console.log("RowLength:", rowLength);
     }
-    
-    
-    
+
+
+
   }
   //console.log(triangle);
   //console.log("Result: ", result);
-  console.log("ELSE:", i);
-    console.log("result:" , result);
-    console.log("RowLength:", rowLength);
-return result;
+  console.log("Return");
+  console.log("result:", result);
+  console.log("RowLength:", rowLength);
+  return result;
 
 
 }
